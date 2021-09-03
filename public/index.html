@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="static/css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Mem0</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+
+</head>
+<body>
+	<div class="container" id="container">
+		<div id="notLogin">
+			<div class="form-container log-in-container">
+				<form onsubmit=login(event)>
+					<h1>Login</h1>
+					<input type="email" placeholder="Email" id="emailInput" />
+					<input type="password" placeholder="Password" id="PasswordInput"/>
+					<a href="resetPassword.html">Forgot your password?</a>
+					<p id='errorOutput'></p>
+					<button type="submit">login</button>
+				</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-right">
+						<h1>Mem0</h1>
+						<p>It is a multi-platform web service providing user for easier way to store information in text format.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="logged-in">
+            <h1>you are logged in</h1>
+			<button onclick="logout()">Logout</button>
+        </div>
+	</div>
+	<script type="text/javascript" src="static/js/index.js"></script>
+</body>
+</html>

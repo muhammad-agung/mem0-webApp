@@ -1,0 +1,139 @@
+body{
+    background:  #f3e0e2;
+    font-family: Consolas,monaco,monospace;
+}
+
+h1{
+    color: #000;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+    font-family: Consolas,monaco,monospace;
+
+}
+
+.content{
+    background: #fff;
+    max-width: 960px;
+    margin: 20px auto;
+    padding:  10px 0px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 20px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+	margin:20px;
+    border-radius: 20px 20px 20px 20px;
+    height: fit-content;
+    word-break: break-all;
+}
+
+li:nth-child(even){
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+
+/* button{
+    border: 0;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background: #FF4B2B;
+    border: 1px solid #FF4B2B;
+    padding: 10px;
+    width: 14%;
+    font-weight: bold;
+    font-family: Consolas,monaco,monospace;
+	letter-spacing: 1px;
+    position: relative;
+	margin:20px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    font-family: Consolas,monaco,monospace;
+}
+
+button:hover{
+    background-color: #ec2b09;
+} */
+
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 35px;
+    margin-left: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+button:hover{
+    background-color: #ec2b09;
+}
+
+.form_table { 
+	text-align: center; 
+}
+.full_width .segment_header { 
+	text-align: center !important; 
+}
+.q {
+	 float:none;display: inline-block; 
+}
+table.matrix, table.rating_ranking {
+	 margin-left:auto !important;margin-right:auto !important; 
+}
+input {
+	background-color: #fff;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    font-family: Consolas,monaco,monospace;
+    box-shadow: -2px 0px 2px rgba(0,0,0,0.1);
+    
+}
+
+textarea {
+	background-color: #fff;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    box-shadow: -2px 0px 2px rgba(0,0,0,0.1);
+}
